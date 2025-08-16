@@ -1,0 +1,144 @@
+.hero-content {
+  max-width: 91%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  max-width: 91%;
+  margin: 0px auto !important;
+  padding: 0px 2.5rem !important;
+}
+
+@media (max-width: 800px) {
+  .hero-content {
+    justify-content: center;
+  }
+}
+
+.hero-content__text {
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  max-width: 30rem;
+  margin-bottom: 7rem;
+}
+
+@media (max-width: 800px) {
+  .hero-content__text {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.hero-content__text h4 {
+  font-size: 25px;
+  font-family: "Rubik", sans-serif;
+  color: #010103;
+  font-weight: bolder;
+  padding-bottom: 5px;
+}
+
+.hero-content__text h1 {
+  font-size: 52px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #010103;
+  line-height: 1.2;
+  margin-top: 10px;
+  margin-bottom: 23px;
+}
+
+.hero-content__text h1 span {
+  color: #309bff;
+}
+
+.hero-content__text p {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+  color: #706f7b;
+  margin-bottom: 30px;
+}
+
+.hero-content__text__btns {
+  display: flex;
+  gap: 2rem;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+
+@media (max-width: 450px) {
+  .hero-content__text__btns {
+    flex-direction: column;
+  }
+}
+
+.hero-content__text__btns a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.hero-content__text__btns__book-ride {
+  background-color: #010103;
+  padding: 18px 15px;
+  border-radius: 0.3rem;
+  border: 2px solid #010103;
+  transition: all 0.3s;
+}
+.hero-content__text__btns__book-ride:hover {
+  background-color: transparent;
+  color: #010103;
+}
+
+
+@media (max-width: 450px) {
+  .hero-content__text__btns__book-ride {
+    padding: 1.8rem 8rem;
+  }
+}
+
+
+
+
+.hero-content__car-img {
+  /* 832473 */
+  z-index: 2;
+  position: absolute;
+  right: -100px;
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+  .hero-content__car-img {
+    display: none;
+  }
+}
+
+.scroll-up {
+  position: fixed;
+  font-size: 3rem;
+  background-color: black;
+  /* background-image: url('../assest/main-logo.png'); */
+  /* background-color: #309bff; */
+  border: 3px solid white;
+  width: 2rem;
+  height: 2rem;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 20;
+  display: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /* padding: 2rem;  */
+  cursor: pointer;
+}
+
+.show-scroll {
+  display: flex;
+}
